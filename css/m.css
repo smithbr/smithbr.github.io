@@ -50,7 +50,8 @@ body {
 header > h1.main-title a {
   /*background: url("../img/logo.png") no-repeat 0 0.07em;*/
   display: inline-block;
-  font-family: 'Muli', sans-serif !important;
+  /*font-family: 'Muli', sans-serif !important;*/
+  font-family: 'Grand Hotel', cursive;
   font-size: 2em;
   margin-top: 0.4em;
   margin-left: -1em;
