@@ -1,0 +1,90 @@
+                    ___           ___                                     ___
+     _____         /\__\         /\  \                                   /\  \
+    /::\  \       /:/ _/_       |::\  \       ___           ___          \:\  \
+   /:/\:\  \     /:/ /\  \      |:|:\  \     /\__\         /\__\          \:\  \
+  /:/ /::\__\   /:/ /::\  \   __|:|\:\  \   /:/__/        /:/  /      ___ /::\  \
+ /:/_/:/\:|__| /:/_/:/\:\__\ /::::|_\:\__\ /::\  \       /:/__/      /\  /:/\:\__\
+ \:\/:/ /:/  / \:\/:/ /:/  / \:\~~\  \/__/ \/\:\  \__   /::\  \      \:\/:/  \/__/
+  \::/_/:/  /   \::/ /:/  /   \:\  \        ~~\:\/\__\ /:/\:\  \      \::/__/
+   \:\/:/  /     \/_/:/  /     \:\  \          \::/  / \/__\:\  \      \:\  \
+    \::/  /        /:/  /       \:\__\         /:/  /       \:\__\      \:\__\
+     \/__/         \/__/         \/__/         \/__/         \/__/       \/__/
+
+
+/*  Global
+-------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Gabriela', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+body {
+  color: #515151;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+
+/*  Header
+-------------------------------------------------- */
+.container > header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header > h1.main-title a {
+  /*background: url("../img/logo.png") no-repeat 0 0.07em;*/
+  display: inline-block;
+  font-family: 'Muli', sans-serif !important;
+  font-size: 2em;
+  margin-top: 0.4em;
+  margin-left: -1em;
+  padding-left: 1.1em;
+  color: #666;
+  text-decoration: none;
+}
+
+
+/*  Nav
+-------------------------------------------------- */
+.nav {
+  margin-bottom: 0;
+  float:none;
+  display:inline-block;
+  *display: inline; *zoom: 1;
+  height: 32px;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-origin: none;
+  background-color: #333;
+}
+
+ul.nav-main a {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 1.85em;
+  line-height: 1.5;
+  color: #ddd;
+}
