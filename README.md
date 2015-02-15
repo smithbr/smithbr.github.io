@@ -1,2 +1,1 @@
-smithbr.github.io
-=================
+bsmith.io
