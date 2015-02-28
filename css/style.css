@@ -183,11 +183,11 @@
 	@keyframes nav-icons { 0% { -moz-transform: translate3d(0,1em,0); -webkit-transform: translate3d(0,1em,0); -o-transform: translate3d(0,1em,0); -ms-transform: translate3d(0,1em,0); transform: translate3d(0,1em,0); opacity: 0; } 100% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); opacity: 1; } }
 
 	#header {
-		-moz-animation: header 1s 0.5s forwards;
-		-webkit-animation: header 1s 0.5s forwards;
-		-o-animation: header 1s 0.5s forwards;
-		-ms-animation: header 1s 0.5s forwards;
-		animation: header 1s 0.5s forwards;
+		-moz-animation: header 1s 1.5s forwards;
+		-webkit-animation: header 1s 1.5s forwards;
+		-o-animation: header 1s 1.5s forwards;
+		-ms-animation: header 1s 1.5s forwards;
+		animation: header 1s 1.5s forwards;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-o-backface-visibility: hidden;
