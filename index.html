@@ -1,53 +1,31 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Brandon Smith | bsmith.io</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-				<header id="header">
-					<h1>Brandon Smith</h1>
-					<!-- <p>Tester &nbsp;&bull;&nbsp; Developer &nbsp;&bull;&nbsp; Explorer</p> -->
-					<nav>
-						<ul>
-							<li><a href="mailto:brandon.matthew.smith@gmail.com?subject=Let's catch up!" class="icon fa-envelope-o"><span class="label">Mail</span></a></li>
-							<li><a href="tel:16092577224" class="icon fa-phone"><span class="label">Phone</span></a></li>
-							<li><a href="https://www.linkedin.com/in/smithbr" class="icon fa-linkedin"><span class="label">Résumé</span></a></li>
-							<li><a href="https://github.com/smithbr" class="icon fa-github"><span class="label">Github</span></a></li>
-						</ul>
-					</nav>
-				</header>
-				<!-- <footer id="footer">
-					<span class="copyright">&copy; 2015 bsmith.io</span>
-				</footer> -->
-			</div>
-		</div>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0" />
+        <title>Brandon Smith</title>
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+    </head>
 
-		  ga('create', 'UA-40098391-4', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
-	</body>
+    <script type="text/javascript">
+        [].forEach.call(document.querySelectorAll("a"), function(element) {
+            element.addEventListener("touchstart", function(e) {
+                this.classList.add("active");
+            });
+            element.addEventListener("touchend", function(e) {
+                this.classList.remove("active");
+            });
+        });
+    </script>
+    
+    <body>
+        <div class="container">
+            <h1>Brandon Smith</h1>
+            <h2>Performance Test Lead at <a href="http://www.elementcorp.com/">Element</a></h2>
+            <nav>
+                <a href="mailto:brandon.matthew.smith@gmail.com?subject=Let's catch up!">Email</a>
+                <a href="https://www.linkedin.com/in/smithbr">LinkedIn</a>
+                <a href="https://github.com/smithbr">GitHub</a>
+            </nav>
+        </div>
+    </body>
 </html>
