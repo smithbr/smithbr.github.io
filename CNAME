@@ -1,1 +1,1 @@
-bsmith.io
+bsmith.la
