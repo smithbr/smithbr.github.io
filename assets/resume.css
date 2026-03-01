@@ -27,13 +27,13 @@
 
 @font-face {
   font-family: "Brandon Grotesque";
-  src: url("../assets/br.otf") format("opentype");
+  src: url("br.otf") format("opentype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Brandon Grotesque";
-  src: url("../assets/bm.otf") format("opentype");
+  src: url("bm.otf") format("opentype");
   font-weight: 500;
 }
 
