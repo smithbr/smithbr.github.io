@@ -2,7 +2,7 @@ name: Generate Resume PDF
 
 on:
   push:
-    branches: [master]
+    branches: [main]
     paths:
       - resume.html
       - assets/resume.css
