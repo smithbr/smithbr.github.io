@@ -130,3 +130,10 @@ a:hover,
 a.active {
   color: var(--color-link-hover);
 }
+
+@media (max-width: 480px) {
+  .container nav {
+    gap: 14px 20px;
+    font-size: 13px;
+  }
+}
