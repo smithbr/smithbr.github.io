@@ -36,40 +36,19 @@
         <a href="https://www.linkedin.com/in/smithbr">LinkedIn</a>
         <a href="https://github.com/smithbr">GitHub</a>
       </nav>
-      <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div>
-      </label>
     </div>
 
     <script type="text/javascript">
-      const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-      function applyTheme(theme) {
-        document.body.setAttribute('data-theme', theme);
-        toggleSwitch.checked = theme === 'dark';
-      }
-
-      function switchTheme(e) {
-        const theme = e.target.checked ? 'dark' : 'light';
-        applyTheme(theme);
-        localStorage.setItem('theme', theme);
-      }
-      toggleSwitch.addEventListener('change', switchTheme, false);
-
-      const savedTheme = localStorage.getItem('theme');
       const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-      if (savedTheme) {
-        applyTheme(savedTheme);
-      } else {
-        applyTheme(systemPrefersDark.matches ? 'dark' : 'light');
-        systemPrefersDark.addEventListener('change', function(e) {
-          if (!localStorage.getItem('theme')) {
-            applyTheme(e.matches ? 'dark' : 'light');
-          }
-        });
+      function applyTheme(dark) {
+        document.body.setAttribute('data-theme', dark ? 'dark' : 'light');
       }
+
+      applyTheme(systemPrefersDark.matches);
+      systemPrefersDark.addEventListener('change', function(e) {
+        applyTheme(e.matches);
+      });
     </script>
 
     <script>
