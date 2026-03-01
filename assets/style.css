@@ -71,16 +71,16 @@ body {
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
 }
 
 .container nav a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-}
-
-.container nav a+a {
-  margin-left: 40px;
+  white-space: nowrap;
 }
 
 .container nav svg {
