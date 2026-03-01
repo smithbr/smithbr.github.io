@@ -109,6 +109,18 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+}
+
+.location span {
+  white-space: nowrap;
+}
+
+.location span + span::before {
+  content: " · ";
 }
 
 .bio {
@@ -135,5 +147,15 @@ a.active {
   .container nav {
     gap: 14px 20px;
     font-size: 13px;
+  }
+
+  .location {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+  }
+
+  .location span + span::before {
+    display: none;
   }
 }
