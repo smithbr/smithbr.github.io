@@ -97,7 +97,25 @@ h2 {
   color: var(--color-desc);
   font-size: 21px;
   font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.location {
+  color: var(--color-nav);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   margin-bottom: 20px;
+}
+
+.bio {
+  color: var(--color-desc);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto 28px;
 }
 
 a {
