@@ -27,7 +27,7 @@
     </script>
   </head>
 
-  <body data-theme="light">
+  <body>
     <div class="container">
       <h1>Brandon Smith</h1>
       <h2>Software Quality Engineering Manager at <a href="https://www.axs.com/">AXS</a></h2>
@@ -44,23 +44,31 @@
 
     <script type="text/javascript">
       const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+      function applyTheme(theme) {
+        document.body.setAttribute('data-theme', theme);
+        toggleSwitch.checked = theme === 'dark';
+      }
+
       function switchTheme(e) {
-        if (e.target.checked) {
-          document.body.setAttribute('data-theme', 'dark');
-          localStorage.setItem('theme', 'dark');
-        } else {
-          document.body.setAttribute('data-theme', 'light');
-          localStorage.setItem('theme', 'light');
-        }
+        const theme = e.target.checked ? 'dark' : 'light';
+        applyTheme(theme);
+        localStorage.setItem('theme', theme);
       }
       toggleSwitch.addEventListener('change', switchTheme, false);
 
-      const currentTheme = localStorage.getItem('theme');
-      if (currentTheme) {
-        document.body.setAttribute('data-theme', currentTheme);
-        if (currentTheme === 'dark') {
-          toggleSwitch.checked = true;
-        }
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else {
+        applyTheme(systemPrefersDark.matches ? 'dark' : 'light');
+        systemPrefersDark.addEventListener('change', function(e) {
+          if (!localStorage.getItem('theme')) {
+            applyTheme(e.matches ? 'dark' : 'light');
+          }
+        });
       }
     </script>
 
