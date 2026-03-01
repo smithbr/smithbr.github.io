@@ -49,6 +49,7 @@ body {
   font-family: "Brandon Grotesque", sans-serif;
   color: var(--color-title);
   padding: 48px 24px;
+  line-height: 1.6;
 }
 
 @keyframes fadein {
@@ -72,6 +73,7 @@ header h1 {
   font-size: 42px;
   font-weight: 500;
   letter-spacing: -0.02em;
+  line-height: 1.1;
   color: var(--color-title);
   margin-bottom: 10px;
 }
@@ -79,7 +81,7 @@ header h1 {
 .contact {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 20px;
+  gap: 8px 20px;
   font-size: 14px;
   color: var(--color-desc);
   margin-bottom: 20px;
@@ -150,13 +152,14 @@ section h2 {
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 8px;
   margin-bottom: 8px;
 }
 
 .job-title {
   font-size: 17px;
   font-weight: 500;
+  letter-spacing: -0.01em;
   color: var(--color-title);
 }
 
@@ -215,7 +218,7 @@ section h2 {
 .achievement-meta {
   font-size: 13px;
   color: var(--color-nav);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .achievement-desc {
@@ -237,7 +240,7 @@ section h2 {
   font-size: 11px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--color-nav);
   margin-bottom: 4px;
 }
