@@ -120,7 +120,7 @@ h2 {
 }
 
 .location span + span::before {
-  content: " · ";
+  content: "\00a0·\00a0";
 }
 
 .bio {
