@@ -24,6 +24,10 @@
   </head>
 
   <body>
+    <button id="theme-toggle" aria-label="Toggle theme">
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg>
+    </button>
     <div class="container">
       <h1>Brandon Smith</h1>
       <h2>Software Quality Engineering Manager at <a href="https://www.axs.com/">AXS</a></h2>
@@ -56,9 +60,22 @@
         document.body.setAttribute('data-theme', dark ? 'dark' : 'light');
       }
 
-      applyTheme(systemPrefersDark.matches);
+      function isDark() {
+        const stored = localStorage.getItem('theme');
+        if (stored) return stored === 'dark';
+        return systemPrefersDark.matches;
+      }
+
+      applyTheme(isDark());
+
       systemPrefersDark.addEventListener('change', function(e) {
-        applyTheme(e.matches);
+        if (!localStorage.getItem('theme')) applyTheme(e.matches);
+      });
+
+      document.getElementById('theme-toggle').addEventListener('click', function() {
+        const dark = document.body.getAttribute('data-theme') !== 'dark';
+        applyTheme(dark);
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
       });
     </script>
   </body>
