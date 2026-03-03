@@ -273,6 +273,28 @@ section h2 {
 
 /* Print */
 
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: var(--color-nav);
+  transition: color .1s ease-in-out;
+  line-height: 0;
+}
+
+#theme-toggle:hover {
+  color: var(--color-link-hover);
+}
+
+[data-theme="dark"] #theme-toggle .icon-moon,
+[data-theme="light"] #theme-toggle .icon-sun {
+  display: none;
+}
+
 @media print {
   body {
     padding: 0;
