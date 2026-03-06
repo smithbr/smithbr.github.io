@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brandon Smith — Resume</title>
     <meta name="description" content="Resume of Brandon Smith, Software Quality Engineering Manager">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="assets/resume.css">
   </head>
 
@@ -209,6 +210,8 @@
 
       function applyTheme(dark) {
         document.body.setAttribute('data-theme', dark ? 'dark' : 'light');
+        document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#181a1b' : '#ffffff');
       }
 
       function isDark() {

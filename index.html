@@ -8,6 +8,7 @@
     <title>Brandon Smith</title>
     <meta name="description" content="Brandon Smith">
     <meta name="author" content="Brandon Smith">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/style.css">
 
@@ -58,6 +59,8 @@
 
       function applyTheme(dark) {
         document.body.setAttribute('data-theme', dark ? 'dark' : 'light');
+        document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', dark ? '#181a1b' : '#ffffff');
       }
 
       function isDark() {
