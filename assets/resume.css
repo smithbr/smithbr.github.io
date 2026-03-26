@@ -48,7 +48,7 @@ body {
   background-color: var(--color-bg);
   font-family: "Brandon Grotesque", sans-serif;
   color: var(--color-title);
-  padding: 48px 24px;
+  padding: 48px 16px;
   line-height: 1.6;
 }
 
@@ -58,7 +58,7 @@ body {
 }
 
 .container {
-  max-width: 760px;
+  max-width: 860px;
   margin: 0 auto;
   animation: fadein 0.5s ease-out;
 }
@@ -70,7 +70,7 @@ header {
 }
 
 header h1 {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 500;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -82,7 +82,7 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--color-desc);
   margin-bottom: 20px;
 }
@@ -102,7 +102,7 @@ header h1 {
   align-items: center;
   gap: 6px;
   font-family: "Brandon Grotesque", sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -127,7 +127,7 @@ section {
 }
 
 section h2 {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -157,21 +157,21 @@ section h2 {
 }
 
 .job-title {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.01em;
   color: var(--color-title);
 }
 
 .job-company {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--color-desc);
   margin-top: 1px;
 }
 
 .job-meta {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--color-nav);
   text-align: right;
   white-space: nowrap;
@@ -183,7 +183,7 @@ section h2 {
 }
 
 .job ul li {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   color: var(--color-desc);
   line-height: 1.55;
@@ -210,19 +210,19 @@ section h2 {
 }
 
 .achievement-title {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--color-title);
 }
 
 .achievement-meta {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--color-nav);
   margin-bottom: 4px;
 }
 
 .achievement-desc {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--color-desc);
 }
 
@@ -237,7 +237,7 @@ section h2 {
 }
 
 .skills-label {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -246,7 +246,7 @@ section h2 {
 }
 
 .skills-list {
-  font-size: 15px;
+  font-size: 17px;
   color: var(--color-desc);
   line-height: 1.6;
 }
@@ -257,7 +257,7 @@ section h2 {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
